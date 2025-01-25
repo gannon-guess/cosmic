@@ -1,54 +1,52 @@
 import React from "react";
-import { Navbar, Button, Container, Nav } from "react-bootstrap";
+import { Navbar, Container, Nav } from "react-bootstrap";
 import View from "./Views";
-
 import { discord_link, changeView } from "./constants.js";
 
-// module for navigating  between the web pages
-const NavBar = ({ viewer, setViewer }) => {
+import './components/NavBar.css';
 
+// Module for navigating between the web pages
+const NavBar = ({ viewer, setViewer }) => {
     return (
         <Navbar bg="dark" variant="dark" expand="lg">
             <Container>
-                <Navbar.Brand >
-                    CoSMiC
-                </Navbar.Brand>
+                <Navbar.Brand>CoSMiC</Navbar.Brand>
                 <Navbar.Toggle aria-controls="navbar-nav" />
-                <Navbar.Collapse id="navbar-nav">
-                    <Nav className="ml-auto">
-                        <Nav.Item>
-                            {/* Home Button */}
-                            <Button 
-                                variant="outline-light" 
-                                className="me-2"
+                <Navbar.Collapse id="navbar-nav" className="d-flex justify-content-between">
+                    {/* Centered Navigation Links */}
+                    <Nav className="mx-auto align-items-center">
+                        <Nav.Item className="d-flex align-items-center">
+                            <button
+                                className="nav-button"
                                 onClick={() => changeView(viewer, setViewer, View.MAIN)}
                             >
                                 Home
-                            </Button>
-                        </Nav.Item>
-                        <Nav.Item>
-                            {/* Signup Button */}
-                            <Button 
-                                variant="outline-light" 
-                                className="me-2"
+                            </button>
+                            <span className="divider">|</span>
+                            <button
+                                className="nav-button"
                                 onClick={() => changeView(viewer, setViewer, View.SIGNUP)}
                             >
                                 Signup
-                            </Button>
-                        </Nav.Item>
-                        <Nav.Item>
-                            {/* FAQ Button */}
-                            <Button 
-                                variant="outline-light" 
-                                className="me-2"
+                            </button>
+                            <span className="divider">|</span>
+                            <button
+                                className="nav-button"
                                 onClick={() => changeView(viewer, setViewer, View.FAQ)}
                             >
                                 FAQ
-                            </Button>
+                            </button>
                         </Nav.Item>
+                    </Nav>
+
+                    {/* Discord Button aligned to the far right */}
+                    <Nav>
                         <Nav.Item>
                             <a href={discord_link} target="_blank" rel="noopener noreferrer">
-                                <i className="bi bi-discord" style={{ fontSize: '30px', marginLeft: '20px', marginTop: "90px" }}></i>
+                                <i
+                                    className="bi bi-discord"
+                                    style={{ fontSize: "30px", marginLeft: "20px" }}
+                                ></i>
                             </a>
                         </Nav.Item>
                     </Nav>

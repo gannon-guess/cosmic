@@ -1,0 +1,30 @@
+.nav-button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 16px;
+    padding: 0 10px;
+    cursor: pointer;
+    transition: color 0.2s ease-in-out;
+}
+
+.nav-button:hover {
+    color: #ccc;
+}
+
+.divider {
+    color: white;
+    padding: 0 10px;
+    font-size: 18px;
+}
+
+.navbar .discord-icon {
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+    transition: color 0.2s ease-in-out;
+}
+
+.navbar .discord-icon:hover {
+    color: #7289da;
+}
