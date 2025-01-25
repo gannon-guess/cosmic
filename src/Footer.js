@@ -5,7 +5,7 @@ function Footer() {
     return (
         <footer className="bg-dark text-white text-center py-3">
                 
-            <p>2024 Collegiate Space Mining Competition</p>
+            <p>2025 Collegiate Space Mining Competition</p>
             <p>Cardinal Space Mining</p>
             <p>
                 <a href={discord_link} target="_blank" rel="noopener noreferrer">
