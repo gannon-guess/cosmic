@@ -28,3 +28,7 @@
 .navbar .discord-icon:hover {
     color: #7289da;
 }
+
+.logo-left {
+    margin-right: auto; /* Ensures it's pushed left */
+}

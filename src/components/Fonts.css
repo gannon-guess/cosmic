@@ -1,0 +1,11 @@
+@font-face {
+    font-family: 'SpaceAge';
+    src: url('../fonts/space_age.ttf') format('truetype');
+    font-weight: normal; /* Optional: 'normal' or 'bold' */
+    font-style: normal; /* Optional: 'normal', 'italic', etc. */
+}
+
+/* Example usage */
+/* body {
+    font-family: 'SpaceAge', sans-serif;
+} */
