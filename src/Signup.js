@@ -5,8 +5,6 @@ import 'bootstrap-icons/font/bootstrap-icons.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 
 import View from "./Views.js";
-import NavBar from "./NavBar.js";
-import Footer from "./Footer.js"
 
 import { changeView } from "./constants.js";
 
@@ -15,11 +13,7 @@ const signup_url = "https://docs.google.com/forms/d/e/1FAIpQLSc2j7bGIWwhort8V1_d
 function Signup({ viewer, setViewer }) {
 
     return (
-        <div>
-            <NavBar
-                viewer = {viewer}
-                setViewer = {setViewer}
-            />
+        <div> 
             <div className="d-flex justify-content-center align-items-center min-vh-100 bg-light">
                 <div className="container p-5 bg-white shadow-lg rounded">
                     <h1 className="text-center mb-4 text-primary">CoSMiC Signup</h1>
@@ -48,7 +42,6 @@ function Signup({ viewer, setViewer }) {
                     </div>
                 </div>
             </div>
-            <Footer/>
         </div>
     );
 }

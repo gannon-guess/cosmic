@@ -2,8 +2,6 @@ import "bootstrap/dist/css/bootstrap.css";
 import 'bootstrap-icons/font/bootstrap-icons.css';
 
 import View from "./Views.js";
-import NavBar from "./NavBar.js"
-import Footer from "./Footer.js";
 import { discord_link, changeView } from "./constants.js"
 
 // module for the main page
@@ -11,11 +9,7 @@ function Main( { viewer, setViewer } ) {
     
 
     return (
-        <div>
-            <NavBar
-                viewer ={viewer}
-                setViewer={setViewer}
-            />
+        <div> 
             {/* Header Section */}
             <header className="bg-primary text-white text-center py-4">
                 <h1>Collegiate Space Mining Competition</h1>
@@ -56,8 +50,6 @@ function Main( { viewer, setViewer } ) {
                     </div>
                 </div>
             </main>
-
-            <Footer/>
         </div>
     );
 }

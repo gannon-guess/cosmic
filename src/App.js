@@ -1,8 +1,10 @@
 import React, { useState } from "react";
 import View from "./Views.js"
+import NavBar from "./NavBar.js";
 import Main from "./Main.js"
 import FAQ from "./FAQ.js"
 import Signup from "./Signup.js"
+import Footer from "./Footer.js"
 
 function App()
 {
@@ -12,30 +14,38 @@ function App()
     // we display the page based on viewer for module, single page development
     return(
         <div>
-            {viewer === View.MAIN ? (
-                <Main 
-                    viewer={viewer}
-                    setViewer = {setViewer}
-                />
-            ) : viewer === View.FAQ ? (
-                <FAQ 
-                    viewer={viewer}
-                    setViewer = {setViewer}
-                />
-            ) : viewer === View.SIGNUP ?  
-            ( 
-                <Signup
-                    viewer={viewer}
-                    setViewer = {setViewer}    
-                />
-            ) :
-            (
-                <Main 
-                    viewer={viewer}
-                    setViewer = {setViewer}
-                />
-            )}
+            <NavBar
+                viewer={viewer}
+                setViewer = {setViewer}
+            />
+            <div>
+                {viewer === View.MAIN ? (
+                    <Main 
+                        viewer={viewer}
+                        setViewer = {setViewer}
+                    />
+                ) : viewer === View.FAQ ? (
+                    <FAQ 
+                        viewer={viewer}
+                        setViewer = {setViewer}
+                    />
+                ) : viewer === View.SIGNUP ?  
+                ( 
+                    <Signup
+                        viewer={viewer}
+                        setViewer = {setViewer}    
+                    />
+                ) :
+                (
+                    <Main 
+                        viewer={viewer}
+                        setViewer = {setViewer}
+                    />
+                )}
+            </div>
+            <Footer/>
         </div>
+        
     );
 }
 

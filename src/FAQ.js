@@ -5,8 +5,6 @@ import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 
 import { Button } from 'react-bootstrap';
 import View from "./Views.js";
-import NavBar from "./NavBar.js";
-import Footer from "./Footer.js";
 
 function FAQ({ viewer, setViewer }) {
     const [questions, setQuestions] = useState([]);
@@ -60,10 +58,6 @@ function FAQ({ viewer, setViewer }) {
 
     return (
         <div>
-            <NavBar
-                viewer={viewer}
-                setViewer={setViewer}
-            />
             <div className="container my-5">
                 <h1 className="text-center mb-4">Frequently Asked Questions</h1>
 
@@ -79,7 +73,6 @@ function FAQ({ viewer, setViewer }) {
                     </Button>
                 </div>
             </div>
-            <Footer/>
         </div>
     );
 }
