@@ -3,14 +3,20 @@ import { Navbar, Container, Nav } from "react-bootstrap";
 import View from "./Views";
 import { discord_link, changeView } from "./constants.js";
 
+import './components/Global.css';
 import './components/NavBar.css';
+
+import CosmicLogo from './images/cosmic.png';
 
 // Module for navigating between the web pages
 const NavBar = ({ viewer, setViewer }) => {
     return (
-        <Navbar bg="dark" variant="dark" expand="lg">
-            <Container>
-                <Navbar.Brand>CoSMiC</Navbar.Brand>
+        <Navbar className="cosmic-header" variant="dark" expand="lg">
+            
+            <Container style={{marginLeft: "10px"}}>
+                <img src={CosmicLogo} alt="Cosmic Logo" style={{width: "75px", marginRight: "200px"}}/>
+                
+                <Navbar.Brand style={{ fontFamily: 'SpaceAge' }}>CoSMiC</Navbar.Brand>
                 <Navbar.Toggle aria-controls="navbar-nav" />
                 <Navbar.Collapse id="navbar-nav" className="d-flex justify-content-between">
                     {/* Centered Navigation Links */}
@@ -44,7 +50,7 @@ const NavBar = ({ viewer, setViewer }) => {
                         <Nav.Item>
                             <a href={discord_link} target="_blank" rel="noopener noreferrer">
                                 <i
-                                    className="bi bi-discord"
+                                    className="cosmic-icon bi bi-discord"
                                     style={{ fontSize: "30px", marginLeft: "20px" }}
                                 ></i>
                             </a>
