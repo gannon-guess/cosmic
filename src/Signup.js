@@ -8,7 +8,8 @@ import View from "./Views.js";
 
 import { changeView } from "./constants.js";
 
-const signup_url = "https://docs.google.com/forms/d/e/1FAIpQLSc2j7bGIWwhort8V1_djMVgLnyUAI7HvKsjeixAu_lggpcXZg/viewform?embedded=true";
+// This defines the google doc to be embedded for the user to fill out
+const signup_url = "https://forms.gle/o7JiHavvevEPctW96";
 
 function Signup({ viewer, setViewer }) {
 
@@ -18,8 +19,19 @@ function Signup({ viewer, setViewer }) {
                 <div className="container p-5 bg-white shadow-lg rounded">
                     <h1 className="text-center mb-4 text-primary">CoSMiC Signup</h1>
 
+                    <a
+                        href={signup_url}
+                        target="_blank" // Opens link in a new tab
+                        rel="noopener noreferrer" // Prevents security risks
+                        >
+                        Signup Form
+                    </a>
+
+                    {/* DOES NOT WORK BECAUSE OUR FORM REQUIRES FILE UPLOAD
+                        LEAVING IN CASE WORK AROUND IS FOUND
+                    */}
                     {/* Google Form Embedded in an iframe */}
-                    <div className="embed-responsive embed-responsive-16by9 mb-4">
+                    {/* <div className="embed-responsive embed-responsive-16by9 mb-4">
                         <iframe 
                             src={signup_url} 
                             width="100%" 
@@ -32,7 +44,7 @@ function Signup({ viewer, setViewer }) {
                         >
                             Loading…
                         </iframe>
-                    </div>
+                    </div> */}
 
                     {/* Back to Main Page Button */}
                     <div className="text-center">
