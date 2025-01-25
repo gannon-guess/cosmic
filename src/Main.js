@@ -2,7 +2,10 @@ import "bootstrap/dist/css/bootstrap.css";
 import 'bootstrap-icons/font/bootstrap-icons.css';
 
 import View from "./Views.js";
-import { discord_link, changeView } from "./constants.js"
+import { discord_link, changeView } from "./constants.js";
+
+import "./components/Global.css";
+import "./components/Fonts.css";
 
 // module for the main page
 function Main( { viewer, setViewer } ) {
@@ -11,7 +14,7 @@ function Main( { viewer, setViewer } ) {
     return (
         <div> 
             {/* Header Section */}
-            <header className="bg-primary text-white text-center py-4">
+            <header className="cosmic-background text-white text-center py-4" style={{ fontFamily: 'SpaceAge' }}>
                 <h1>Collegiate Space Mining Competition</h1>
             </header>
 
@@ -44,9 +47,9 @@ function Main( { viewer, setViewer } ) {
                         <p>If you have any questions, feel free to join our official Discord channel.</p>
                         
                         {/* Discord Icon Link */}
-                        <a href={discord_link} target="_blank" rel="noopener noreferrer">
-                            <i className="bi bi-discord" style={{ fontSize: '50px', marginLeft: '20px' }}></i>
-                        </a>
+                        {/* <a href={discord_link} target="_blank" rel="noopener noreferrer">
+                            <i className="cosmic-icon bi bi-discord" style={{ fontSize: '50px', marginLeft: '20px'}}></i>
+                        </a> */}
                     </div>
                 </div>
             </main>
