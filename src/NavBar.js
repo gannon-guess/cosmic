@@ -1,4 +1,5 @@
 import React from "react";
+import { Outlet, Link } from "react-router-dom";
 import { Navbar, Container, Nav } from "react-bootstrap";
 import View from "./Views";
 import { discord_link, changeView } from "./constants.js";
@@ -7,9 +8,10 @@ import './components/Global.css';
 import './components/NavBar.css';
 
 import CosmicLogo from './images/cosmic.png';
+const signup_url = "https://forms.gle/o7JiHavvevEPctW96";
 
 // Module for navigating between the web pages
-const NavBar = ({ viewer, setViewer }) => {
+const NavBar = () => {
     return (
         <Navbar className="cosmic-header" variant="dark" expand="lg">
             
@@ -22,26 +24,22 @@ const NavBar = ({ viewer, setViewer }) => {
                     {/* Centered Navigation Links */}
                     <Nav className="mx-auto align-items-center">
                         <Nav.Item className="d-flex align-items-center">
-                            <button
-                                className="nav-button"
-                                onClick={() => changeView(viewer, setViewer, View.MAIN)}
-                            >
+                            <Link className="nav-link" to="/" style={{ color: "#FFFFFF", textDecoration: "none" }}>
                                 Home
-                            </button>
+                            </Link>
                             <span className="divider">|</span>
-                            <button
-                                className="nav-button"
-                                onClick={() => changeView(viewer, setViewer, View.SIGNUP)}
+                            <a
+                                href={signup_url}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                style={{ textDecoration: "none", color: "#FFFFFF" }}
                             >
                                 Signup
-                            </button>
-                            <span className="divider">|</span>
-                            <button
-                                className="nav-button"
-                                onClick={() => changeView(viewer, setViewer, View.FAQ)}
-                            >
+                            </a>
+                            <span className="divider">|</span> 
+                            <Link className="nav-link" to="/faq" style={{ color: "#FFFFFF", textDecoration: "none" }}>
                                 FAQ
-                            </button>
+                            </Link>
                         </Nav.Item>
                     </Nav>
 
