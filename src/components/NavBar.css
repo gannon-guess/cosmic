@@ -32,3 +32,9 @@
 .logo-left {
     margin-right: auto; /* Ensures it's pushed left */
 }
+
+a:hover {
+    color:#00A0C6; 
+    text-decoration:none; 
+    cursor:pointer;  
+}
