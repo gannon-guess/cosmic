@@ -6,6 +6,7 @@ import { discord_link, changeView } from "./constants.js";
 
 import "./components/Global.css";
 import "./components/Fonts.css";
+import { signup_url } from "./constants.js";
 
 // module for the main page
 function Main( { viewer, setViewer } ) {
@@ -29,21 +30,17 @@ function Main( { viewer, setViewer } ) {
 
                         <h3>How to Participate</h3>
                         <p>
-                            To sign up for CoSMiC, please fill out the Google form on our <strong 
-                                        onClick={() => changeView(viewer, setViewer, View.SIGNUP)} 
-                                        style={{ 
-                                        color: 'blue', 
-                                        textDecoration: 'underline', 
-                                        cursor: 'pointer', 
-                                        display: 'inline'
-                                    }}
+                            To sign up for CoSMiC, please fill out the Google form <a     
+                                    href={signup_url}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
                                 >
-                                    signup page
-                            </strong>!
+                                    here
+                            </a>!
                         </p>
                         
 
-                        <h3>Connect with Us</h3>
+                        <h3>Connect With Us</h3>
                         <p>If you have any questions, feel free to join our official Discord channel.</p>
                         
                         {/* Discord Icon Link */}
