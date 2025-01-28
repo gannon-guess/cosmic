@@ -1,10 +1,12 @@
 import React, { useState } from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import View from "./Views.js"
 import NavBar from "./NavBar.js";
 import Main from "./Main.js"
 import FAQ from "./FAQ.js"
-import Signup from "./Signup.js"
 import Footer from "./Footer.js"
+
+import "./components/Global.css";
 
 function App()
 {
@@ -13,38 +15,16 @@ function App()
 
     // we display the page based on viewer for module, single page development
     return(
-        <div>
-            <NavBar
-                viewer={viewer}
-                setViewer = {setViewer}
-            />
-            <div>
-                {viewer === View.MAIN ? (
-                    <Main 
-                        viewer={viewer}
-                        setViewer = {setViewer}
-                    />
-                ) : viewer === View.FAQ ? (
-                    <FAQ 
-                        viewer={viewer}
-                        setViewer = {setViewer}
-                    />
-                ) : viewer === View.SIGNUP ?  
-                ( 
-                    <Signup
-                        viewer={viewer}
-                        setViewer = {setViewer}    
-                    />
-                ) :
-                (
-                    <Main 
-                        viewer={viewer}
-                        setViewer = {setViewer}
-                    />
-                )}
-            </div>
+        <BrowserRouter>
+            <NavBar />
+            <main>
+                <Routes>
+                    <Route index element={<Main />} />
+                    <Route path="faq" element={<FAQ />} />
+                </Routes>
+            </main>
             <Footer/>
-        </div>
+        </BrowserRouter>
         
     );
 }
