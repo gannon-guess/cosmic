@@ -9,11 +9,31 @@
     },
     {
         "question": "Where can I sign up?",
-        "answer": "You can navigate to our Google From on the Signup page above."
+        "answer": "You can navigate to our Google Form through Signup above."
+    },
+    {
+        "question": "What time is the application deadline?",
+        "answer": "Applications must be submitted before the end of February."
     },
     {
         "question": "Where is the rulebook?",
-        "answer": "The Rule Book will be available on the website soon"
+        "answer": "The Rule Book will be available on the website soon. Our Discord will be able to provide further information at present."
+    },
+    {
+        "question": "Is the berm zone centered vertically inside of the dump zone?",
+        "answer": "Yes, the berm zone will be centered vertically."
+    },
+    {
+        "question": "Will teams be provided with a table?",
+        "answer": "Yes, we have a atrium set aside for pits."
+    },
+    {
+        "question": "Are robots weighed with the battery included?",
+        "answer": "For Proof of Life weigh your robot with whatever batteries you would normally use. For competition, we will weigh your robot before each run and record it."
+    },
+    {
+        "question": "Who are the judges? (Chief Judge, Project Manager, MCJs/MCD, who will be judging the papers, etc.)",
+        "answer": "Members of Cardinal Space Mining and potentially some industry partners. We have unique domain experience and as we aren't competing in our own competition, there is no conflict of interest."
     },
     {
         "question": "Where can I ask further questions?",
