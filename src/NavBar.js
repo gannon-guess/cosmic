@@ -28,14 +28,17 @@ const NavBar = () => {
                                 Home
                             </Link>
                             <span className="divider">|</span>
-                            <a
+                            {/* <a
                                 href={signup_url}
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 style={{ textDecoration: "none", color: "#FFFFFF" }}
                             >
-                                Signup
-                            </a>
+                                Sign Up
+                            </a> */}
+                            <Link className="nav-link" to="/signup" style={{ color: "#FFFFFF", textDecoration: "none" }}>
+                                Sign Up
+                            </Link>
                             <span className="divider">|</span> 
                             <Link className="nav-link" to="/faq" style={{ color: "#FFFFFF", textDecoration: "none" }}>
                                 FAQ
