@@ -37,7 +37,7 @@ function FAQ({ viewer, setViewer }) {
                     data-bs-toggle="collapse"
                     data-bs-target={`#collapse${index}`}
                     aria-expanded="false"  // Expand the first item by default
-                    aria-controls={`collapse${index}`}
+      
                 >
                     {question.question}
                 </button>
