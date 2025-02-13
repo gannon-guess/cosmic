@@ -3,6 +3,7 @@ import 'bootstrap-icons/font/bootstrap-icons.css';
 
 import View from "./Views.js";
 import { discord_link, changeView } from "./constants.js";
+import { Button } from 'react-bootstrap';
 
 import "./components/Global.css";
 import "./components/Fonts.css";
@@ -30,17 +31,20 @@ function Main( { viewer, setViewer } ) {
 
                         <h3>How to Participate</h3>
                         <p>
-                            To sign up for CoSMiC, please fill out the Google form <a     
-                                    href={signup_url}
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                >
-                                    here
-                            </a>!
+                            To sign up for CoSMiC, please fill out our Google form.
                         </p>
                         
+                        <div>
+                            <Button 
+                                onClick={() => window.open(signup_url, '_blank')} 
+                                variant="primary" 
+                                className="mt-4"
+                            >
+                                Sign Up
+                            </Button>
+                        </div>
 
-                        <h3>Connect With Us</h3>
+                        <h3 style={{marginTop:'30px'}}>Connect With Us</h3>
                         <p>If you have any questions, feel free to join our official Discord channel.</p>
                         
                         {/* Discord Icon Link */}
