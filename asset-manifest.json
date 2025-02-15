@@ -1,12 +1,12 @@
 {
   "files": {
     "main.css": "/static/css/main.58614207.css",
-    "main.js": "/static/js/main.b0af3aae.js",
+    "main.js": "/static/js/main.50585bc3.js",
     "static/media/arena2.png": "/static/media/arena2.e9bc2b42e41149660521.png",
     "static/media/sictr.jpeg": "/static/media/sictr.7ebcb6d0eb9bc35ea340.jpeg",
     "static/media/cosmic.png": "/static/media/cosmic.3d5585f72b5470f04b27.png",
-    "static/media/howe_basement.png": "/static/media/howe_basement.6b54a7f000d5fa801904.png",
-    "static/media/sictr_floorplan.png": "/static/media/sictr_floorplan.ab5935b7413fc969b97f.png",
+    "static/media/howe_basement.png": "/static/media/howe_basement.983d3de5a57882d75d61.png",
+    "static/media/sictr_floorplan.png": "/static/media/sictr_floorplan.dc21aae39301ef55d65e.png",
     "static/media/mask.jpeg": "/static/media/mask.9465925820984b5c46e1.jpeg",
     "static/media/arena1.png": "/static/media/arena1.ad162f38413c264f314f.png",
     "static/media/bootstrap-icons.woff?": "/static/media/bootstrap-icons.39795c0b4513de014cf8.woff",
@@ -18,10 +18,10 @@
     "static/media/space_age.ttf": "/static/media/space_age.ee4242670515bf1b8739.ttf",
     "index.html": "/index.html",
     "main.58614207.css.map": "/static/css/main.58614207.css.map",
-    "main.b0af3aae.js.map": "/static/js/main.b0af3aae.js.map"
+    "main.50585bc3.js.map": "/static/js/main.50585bc3.js.map"
   },
   "entrypoints": [
     "static/css/main.58614207.css",
-    "static/js/main.b0af3aae.js"
+    "static/js/main.50585bc3.js"
   ]
 }
