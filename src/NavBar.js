@@ -7,7 +7,7 @@ import { discord_link, changeView } from "./constants.js";
 import './components/Global.css';
 import './components/NavBar.css';
 
-import CosmicLogo from './images/cosmic.png';
+import CosmicLogo from './images/cosmic_logo.png';
 const signup_url = "https://forms.gle/o7JiHavvevEPctW96";
 
 // Module for navigating between the web pages
