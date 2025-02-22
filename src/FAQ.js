@@ -39,7 +39,7 @@ function FAQ({ viewer, setViewer }) {
                     aria-expanded="false"  // Expand the first item by default
       
                 >
-                    {question.question}
+                    <strong>{question.question}</strong>
                 </button>
             </h2>
             <div
@@ -58,7 +58,7 @@ function FAQ({ viewer, setViewer }) {
 
     return (
         <div>
-            <div className="container my-5">
+            <div className="container my-5" style={{ paddingBottom: "90px" }}>
                 <h1 className="text-center mb-4">Frequently Asked Questions</h1>
 
                 {/* FAQ Section */}
@@ -67,11 +67,11 @@ function FAQ({ viewer, setViewer }) {
                 </div>
 
                 {/* Button to return to main page */}
-                <div className="text-center mt-4">
+                {/* <div className="text-center mt-4" style={{marginBottom: "90px"}}>
                     <Button onClick={onMain} variant="secondary">
                         Back to Main Page
                     </Button>
-                </div>
+                </div> */}
             </div>
         </div>
     );
