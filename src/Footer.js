@@ -1,4 +1,5 @@
 import './components/Footer.css';
+import './components/Global.css';
 import { discord_link } from './constants';
 
 // here we define a Footer module that can be used in any of our pages
