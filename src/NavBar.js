@@ -27,6 +27,7 @@ const NavBar = () => {
                             <Link className="nav-link" to="/" style={{ color: "#FFFFFF", textDecoration: "none" }}>
                                 Home
                             </Link>
+
                             <span className="divider">|</span>
                             {/* <a
                                 href={signup_url}
@@ -36,13 +37,23 @@ const NavBar = () => {
                             >
                                 Sign Up
                             </a> */}
+
                             <Link className="nav-link" to="/signup" style={{ color: "#FFFFFF", textDecoration: "none" }}>
                                 Sign Up
                             </Link>
+
                             <span className="divider">|</span> 
+
+                            <Link className="nav-link" to="/tourism" style={{ color: "#FFFFFF", textDecoration: "none" }}>
+                                Ames Tourism
+                            </Link>
+
+                            <span className="divider">|</span>
+
                             <Link className="nav-link" to="/faq" style={{ color: "#FFFFFF", textDecoration: "none" }}>
                                 FAQ
                             </Link>
+                            
                         </Nav.Item>
                     </Nav>
 
