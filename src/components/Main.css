@@ -1,0 +1,41 @@
+.main-container {
+    padding: 20px;
+}
+
+.content-section {
+    display: flex;
+    align-items: center; /* Aligns content vertically */
+    margin-bottom: 20px;
+    justify-content: space-between;
+}
+
+.content-text {
+    flex: 1;
+    padding: 20px;
+}
+
+.content-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.content-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px; /* Optional: adds rounded corners to images */
+}
+
+/* Alternate layout for left-right and right-left */
+.left-right {
+    flex-direction: row; /* Image on the right and text on the left */
+}
+
+.right-left {
+    flex-direction: row-reverse; /* Image on the left and text on the right */
+}
+
+/* Add a little padding to the button area if needed */
+.text-center {
+    padding-bottom: 50px; /* Adjust based on your needs */
+}

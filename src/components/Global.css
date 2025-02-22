@@ -9,3 +9,37 @@
 .cosmic-icon {
     color: red;
 }
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.app-container {
+    position: relative;
+    min-height: 100vh; /* Ensures the full viewport height */
+    display: flex;
+    flex-direction: column;
+}
+
+.content-wrapper {
+    flex: 1; /* Allows content to push the footer down */
+    padding-bottom: var(--footer-height); /* Prevents content overlap */
+}
+
+footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: var(--footer-height); /* Footer takes full height */
+    background-color: #f8f9fa;
+    text-align: center;
+    padding: 90px; /* Adjust padding as needed */
+}
+
+/* Define footer height using CSS variables */
+:root {
+    --footer-height: 171px; /* Adjust as needed */
+}
