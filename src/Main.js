@@ -73,12 +73,13 @@ function Main( { viewer, setViewer } ) {
                             </div>
                         </div>
 
-                        <div style={{marginTop:'30px'}}>
+                        <div style={{ marginTop: '30px' }}>
                             <h3>Rule Book</h3>
-                            <a href="/files/CoSMiCguidebook-2025-Rev1.pdf" download="CoSMiC_Rulebook.pdf">
-                                Download CoSMiC Rulebook
+                            <a href="/files/CoSMiCguidebook-2025-Rev1.pdf" target="_blank" rel="noopener noreferrer">
+                                Open CoSMiC Rulebook
                             </a>
                         </div>
+                        {/* <embed src="/files/CoSMiCguidebook-2025-Rev1.pdf" width="500" height="375" type="application/pdf"></embed> */}
 
                         <div style={{marginTop:'30px'}}>
                             <h3 >Connect With Us</h3>
