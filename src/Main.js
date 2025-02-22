@@ -79,6 +79,8 @@ function Main( { viewer, setViewer } ) {
                                 Open CoSMiC Rulebook
                             </a>
                         </div>
+                        
+                        {/* Option to embed rulebook in page */}
                         {/* <embed src="/files/CoSMiCguidebook-2025-Rev1.pdf" width="500" height="375" type="application/pdf"></embed> */}
 
                         <div style={{marginTop:'30px'}}>
