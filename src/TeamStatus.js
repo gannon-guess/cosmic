@@ -4,13 +4,13 @@ import "bootstrap/dist/css/bootstrap.css";
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 
-function Tourism() {
+function TeamStatus() {
     return (
         <div className=" text-center py-5">
-            <h2 className="mb-4">Ames Locals Coming Soon!</h2>
+            <h2 className="mb-4">PoL due March 31</h2>
 
         </div>
     );
 }
 
-export default Tourism;
+export default TeamStatus;

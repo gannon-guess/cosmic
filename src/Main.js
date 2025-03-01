@@ -13,6 +13,7 @@ import { signup_url } from "./constants.js";
 import arena1 from './images/arena1.png';
 import arena2 from './images/arena2.png';
 import howe from './images/howe.jpeg';
+import lunarsurface from './images/lunar_surface.jpg';
 import howe_basement from './images/howe_basement.png';
 import filter from './images/filter.jpeg';
 import mask from './images/mask.jpeg';
@@ -42,84 +43,87 @@ function Main( { viewer, setViewer } ) {
     ];
 
     return (
-        <div style={{paddingBottom: "90px"}}> 
-            {/* Header Section */}
-            <header className="cosmic-background text-white text-center py-4" style={{ fontFamily: 'SpaceAge' }}>
-                <h1>Collegiate Space Mining Competition</h1>
-            </header>
+        <div style={{paddingBottom: "90px", position: "relative", backgroundImage: `url(${lunarsurface})`, backgroundSize: "cover", backgroundPosition: "center", display: "flex"}}> 
+            {/* Left and Right Image Section */}
+            <div style={{ flex: "1" }}>
+            </div>
 
-            {/* Main Content Section */}
-            <main className="container my-5">
-                <div className="row">
-                    <div className="col-md-8 mx-auto">
-                        <h2>About CoSMiC</h2>
-                        <p>
-                            The Collegiate Space Mining Competition, or CoSMiC, is an oportunity for schools in the US to compete head-to-head in a national lunar robot competition. This competition will be hosted at Iowa State University from May 21 to 24, 2025.
-                        </p>
+            {/* Center Content Section */}
+            <div style={{ flex: "2.25", padding: "0 0px", backgroundColor: "rgb(255, 255, 255)" }}>
+                {/* Header Section */}
+                <header className="cosmic-background text-white text-center py-4" style={{ fontFamily: 'SpaceAge', margin: "0 auto" }}>
+                    <h1>Collegiate Space Mining Competition</h1>
+                </header>
 
-                        <div>
-                            <h3>How to Participate</h3>
-                            <p>
-                                To sign up for CoSMiC, please fill out our Google form.
-                            </p>                        
-                            <div>
-                                <Button 
-                                    onClick={() => window.open(signup_url, '_blank')} 
-                                    variant="primary" 
-                                    className="mt-4"
-                                >
-                                    Sign Up
-                                </Button>
-                            </div>
-                        </div>
-
-                        <div style={{ marginTop: '30px' }}>
-                            <h3>Rule Book</h3>
-                            <a href="/files/CoSMiCguidebook-2025-Rev1.pdf" target="_blank" rel="noopener noreferrer">
-                                Open CoSMiC Rulebook
-                            </a>
-                        </div>
-                        
-                        {/* Option to embed rulebook in page */}
-                        {/* <embed src="/files/CoSMiCguidebook-2025-Rev1.pdf" width="500" height="375" type="application/pdf"></embed> */}
-
-                        <div style={{marginTop:'30px'}}>
-                            <h3 >Connect With Us</h3>
-                            <p>If you have any questions, feel free to join our official Discord channel.</p>
-
-                        </div>
-                        
-                        <h3>Schedule</h3>
-                        <div className="content-image">
+                {/* Main Content Section */}
+                <main className="container my-5">
+                    <div className="row">
+                        <div className="col-md-10 mx-auto">
+                            <h2 style={{ fontSize: '1.5em' }}>About CoSMiC</h2>
+                            <p style={{ fontSize: '1.2em' }}>
+                                The Collegiate Space Mining Competition, or CoSMiC, is an oportunity for schools in the US to compete head-to-head in a national lunar robot competition. This competition will be hosted at Iowa State University from May 21 to 24, 2025. </p> 
                             
-                            <img src={schedule} alt={`Schedule`} />
-                        </div>
-                        
-                        {/* Discord Icon Link */}
-                        {/* <a href={discord_link} target="_blank" rel="noopener noreferrer">
-                            <i className="cosmic-icon bi bi-discord" style={{ fontSize: '50px', marginLeft: '20px'}}></i>
-                        </a> */}
-                        <div style={{padding: '30px'}}>
-                            <h3>CoSMiC Facilities</h3>
-                            {campus_content.map((item, index) => (
-                                <div
-                                    className={`content-section ${index % 2 === 0 ? "left-right" : "right-left"}`}
-                                    key={index}
-                                >
-                                    <div className="content-text">
-                                        <p>{item.text}</p>
-                                    </div>
-                                    <div className="content-image">
-                                        <img src={item.image} alt={`Image ${index + 1}`} />
-                                    </div>
-                                </div>
-                            ))}
-                        </div>
+                            <p style={{ fontSize: '1.2em' }}>
+                                The competition will consist of 10+ teams each granted two 30 minute runs to mine and transport lunar regolith in a simulated lunar environment. 
+                            </p>
 
-                        
+                            <div>
+                                <h3 style={{ fontSize: '1.5em' }}>How to Attend</h3>
+                                <p style={{ fontSize: '1.2em' }}>
+                                    The competition dates are May 22nd to May 24th on Iowa State University's Campus. We would like to invite you to attend as a spectator on site or via livestream.
+                                </p>                        
+                            
+                            </div>
+                            
+                            {/* Option to embed rulebook in page */}
+                            {/* <embed src="/files/CoSMiCguidebook-2025-Rev1.pdf" width="500" height="375" type="application/pdf"></embed> */}
+
+                            <div style={{marginTop:'30px'}}>
+                                <h3 style={{ fontSize: '1.4em' }}>Connect With Us</h3>
+                                <p style={{ fontSize: '1.2em' }}>If you have any questions, feel free to join our official Discord channel.</p>
+
+                            </div>
+                            
+                            <h3 style={{ fontSize: '1.4em' }}>Schedule</h3>
+                            <div className="content-image">
+                                
+                                <img src={schedule} alt={`Schedule`} />
+                            </div>
+                            <div style={{ marginTop: '30px', padding: '20px', border: '1px solid #ddd', borderRadius: '5px', backgroundColor: '#f9f9f9' }}>
+                                <h3 style={{ fontSize: '1.4em' }}>Rule Book</h3>
+                                <a href="/files/CoSMiCguidebook-2025-Rev1.pdf" target="_blank" rel="noopener noreferrer" className="btn btn-success">
+                                    Open CoSMiC Rulebook
+                                </a>
+                            </div>
+                            {/* Discord Icon Link */}
+                            {/* <a href={discord_link} target="_blank" rel="noopener noreferrer">
+                                <i className="cosmic-icon bi bi-discord" style={{ fontSize: '50px', marginLeft: '20px'}}></i>
+                            </a> */}
+                            <div style={{padding: '30px'}}>
+                                <h3 style={{ fontSize: '1.4em' }}>CoSMiC Facilities</h3>
+                                {campus_content.map((item, index) => (
+                                    <div
+                                        className={`content-section ${index % 2 === 0 ? "left-right" : "right-left"}`}
+                                        key={index}
+                                    >
+                                        <div className="content-text">
+                                            <p style={{ fontSize: '1.2em' }}>{item.text}</p>
+                                        </div>
+                                        <div className="content-image">
+                                            <img src={item.image} alt={`Image ${index + 1}`} />
+                                        </div>
+                                    </div>
+                                ))}
+                            </div>
+
+                            
+                        </div>
                     </div>
-                </div>
-            </main>
+                </main>
+            </div>
+
+            <div style={{ flex: "1" }}>
+            </div>
         </div>
     );
 }

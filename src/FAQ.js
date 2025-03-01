@@ -2,16 +2,16 @@ import React, { useState, useEffect } from "react";
 import "bootstrap/dist/css/bootstrap.css";
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
+import lunarsurface from './images/lunar_surface.jpg';
 
 import { Button } from 'react-bootstrap';
-import View from "./Views.js";
 
-function FAQ({ viewer, setViewer }) {
+function FAQ({ setPage }) {
     const [questions, setQuestions] = useState([]);
 
     // we need a function for returning to main
     const onMain = () => {
-        setViewer(View.MAIN);
+        setPage("MAIN");
     };
 
     // we obtain the FAQ questions when this function is called
@@ -57,21 +57,32 @@ function FAQ({ viewer, setViewer }) {
     
 
     return (
-        <div>
-            <div className="container my-5" style={{ paddingBottom: "90px" }}>
-                <h1 className="text-center mb-4">Frequently Asked Questions</h1>
-
-                {/* FAQ Section */}
-                <div className="accordion" id="faqAccordion">
-                    {listQuestions}
-                </div>
-
-                {/* Button to return to main page */}
-                {/* <div className="text-center mt-4" style={{marginBottom: "90px"}}>
-                    <Button onClick={onMain} variant="secondary">
-                        Back to Main Page
-                    </Button>
-                </div> */}
+        <div style={{paddingBottom: "90px", position: "relative", backgroundImage: `url(${lunarsurface})`, backgroundSize: "cover", backgroundPosition: "center", display: "flex", height: "100vh"}}>
+            <div style={{ flex: "1" }}>
+            </div>
+            <div style={{ flex: "2.25", padding: "0 0px", backgroundColor: "rgb(255, 255, 255)" }}>
+                {/* Header Section */}
+                <header className="cosmic-background text-white text-center py-4" style={{ margin: "0 auto" }}>
+                    <h1>Frequently Asked Questions</h1>
+                </header>
+                <main className="container my-5">
+                    <div className="row">
+                        <div className="col-md-10 mx-auto">
+                            {/* FAQ Section */}
+                            <div className="accordion" id="faqAccordion">
+                                {listQuestions}
+                            </div>
+                            {/* Button to return to main page */}
+                            <div className="text-center mt-4" style={{ marginBottom: "20px" }}>
+                                <Button onClick={onMain} variant="secondary">
+                                    Back to Main Page
+                                </Button>
+                            </div>
+                        </div>
+                    </div>
+                </main>
+            </div>
+            <div style={{ flex: "1" }}>
             </div>
         </div>
     );

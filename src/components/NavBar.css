@@ -38,3 +38,8 @@ a:hover {
     text-decoration:none; 
     cursor:pointer;  
 }
+
+#navbar-nav {
+    flex-grow: 1;
+    justify-content: center;
+}
