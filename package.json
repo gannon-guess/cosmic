@@ -3,6 +3,7 @@
   "name": "csm_cosmic_website",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://gannon-guess.github.io/cosmic/",
   "dependencies": {
     "@react-pdf-viewer/core": "^3.12.0",
     "@react-pdf-viewer/default-layout": "^3.12.0",
@@ -23,7 +24,7 @@
   "scripts": {
     "start": "react-scripts start",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build -u \"GitHub Actions Bot <github-actions[bot]@users.noreply.github.com>\"",
+    "deploy": "gh-pages -d build -u \"Gannon Guess <gannon.guess@gmail.com>\"",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
