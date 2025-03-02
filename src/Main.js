@@ -2,22 +2,14 @@ import "bootstrap/dist/css/bootstrap.css";
 import 'bootstrap-icons/font/bootstrap-icons.css';
 
 // import View from "./Views.js";
-import { discord_link, changeView } from "./constants.js";
-import { Button } from 'react-bootstrap';
 
 import "./components/Global.css";
 import "./components/Main.css";
 import "./components/Fonts.css";
-import { signup_url } from "./constants.js";
 
-import arena1 from './images/arena1.png';
-import arena2 from './images/arena2.png';
 import howe from './images/howe.jpeg';
 import lunarsurface from './images/lunar_surface.jpg';
 import howe_basement from './images/howe_basement.png';
-import filter from './images/filter.jpeg';
-import mask from './images/mask.jpeg';
-import ppe from './images/ppe.jpeg';
 import schedule from './images/schedule.png';
 import sictr from './images/sictr.jpeg';
 import sictr_floorplan from './images/sictr_floorplan.png';
@@ -33,14 +25,14 @@ function Main( { viewer, setViewer } ) {
         // { image: sictr_floorplan, text: "This is some text for image 3." },
         { image: sictr_floorplan, text: "Student Innnovation Center Floor Plan" }
     ];
-    const schedule_content = [
-        { image: schedule, text: "Event Schedule" }
-    ];
+    // const schedule_content = [
+    //     { image: schedule, text: "Event Schedule" }
+    // ];
     
-    const floorplan_content = [
-        { image: howe_basement, text: "Howe Hall Floor Plan" },
-        { image: sictr_floorplan, text: "Student Innnovation Center" }
-    ];
+    // const floorplan_content = [
+    //     { image: howe_basement, text: "Howe Hall Floor Plan" },
+    //     { image: sictr_floorplan, text: "Student Innnovation Center" }
+    // ];
 
     return (
         <div style={{paddingBottom: "90px", position: "relative", backgroundImage: `url(${lunarsurface})`, backgroundSize: "cover", backgroundPosition: "center", display: "flex"}}> 
@@ -110,7 +102,7 @@ function Main( { viewer, setViewer } ) {
                                             <p style={{ fontSize: '1.2em' }}>{item.text}</p>
                                         </div>
                                         <div className="content-image">
-                                            <img src={item.image} alt={`Image ${index + 1}`} />
+                                            <img src={item.image} alt={`${index + 1}`} />
                                         </div>
                                     </div>
                                 ))}

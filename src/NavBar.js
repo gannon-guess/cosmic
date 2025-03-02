@@ -1,13 +1,12 @@
 import React from "react";
-import { Outlet, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { Navbar, Container, Nav } from "react-bootstrap";
-import { discord_link, changeView } from "./constants.js";
+import { discord_link } from "./constants.js";
 
 import './components/Global.css';
 import './components/NavBar.css';
 
 import CosmicLogo from './images/cosmic_logo.png';
-const signup_url = "https://forms.gle/o7JiHavvevEPctW96";
 
 // Module for navigating between the web pages
 const NavBar = () => {

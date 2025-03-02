@@ -1,9 +1,8 @@
 import React from "react";
-import { Button, Container } from 'react-bootstrap';
+import { Container } from 'react-bootstrap';
 import "bootstrap/dist/css/bootstrap.css";
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
-import Countdown from "./Countdown";
 import lunarsurface from './images/lunar_surface.jpg';
 
 function Sponsorship() {

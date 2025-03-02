@@ -9,10 +9,9 @@ import Footer from './Footer';
 // Set up the PDF worker
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
 
-function Rulebook({ setPage }) {
+function Rulebook() {
     const [numPages, setNumPages] = useState(null);
     const [pageNumber, setPageNumber] = useState(1);
-    const [containerWidth, setContainerWidth] = useState(0);
 
     function onDocumentLoadSuccess({ numPages }) {
         setNumPages(numPages);
@@ -38,9 +37,9 @@ function Rulebook({ setPage }) {
     
 
 
-    const onMain = () => {
-        setPage("MAIN");
-    };
+    // const onMain = () => {
+    //     setPage("MAIN");
+    // };
 
     return (
         <div
@@ -81,7 +80,6 @@ function Rulebook({ setPage }) {
                 >
                     <Page
                         pageNumber={pageNumber}
-                        width={containerWidth}
                         height={window.innerHeight * 0.8} // Slightly reduce height for buttons
                     />
                 </Document>
