@@ -37,7 +37,6 @@ jobs:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
     - name: Install dependencies
-      # Using npm ci is generally faster than running npm i because it caches dependencies
       run: |
         npm ci
     - name: Build the app
@@ -50,12 +49,11 @@ jobs:
     - name: Setup Pages
       uses: actions/configure-pages@v3
     - name: Upload artifact
-      uses: actions/upload-pages-artifact@v1
+      uses: actions/upload-pages-artifact@v2  # Updated version
       with:
-        # Upload build directory content
         path: 'build/'
     - name: Deploy to GitHub Pages
       id: deployment
-      uses: actions/deploy-pages@v1
+      uses: actions/deploy-pages@v2  # Updated version
       env:  
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
