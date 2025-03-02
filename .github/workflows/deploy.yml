@@ -1,9 +1,9 @@
-name: CI/CD Pipeline
+name: Deploy to GitHub Pages
 
 on:
   push:
     branches:
-      - main  # Runs only when code is pushed to the main branch
+      - main  # Runs when pushing to main branch
 
 jobs:
   deploy:
@@ -16,10 +16,15 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '20'  # Change this based on your project
+          node-version: '20'
 
       - name: Install Dependencies
         run: npm install
+
+      - name: Set up Git identity  # 🔥 Add this step!
+        run: |
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git config --global user.name "github-actions[bot]"
 
       - name: Run Deploy Script
         run: npm run deploy
