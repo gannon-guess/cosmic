@@ -15,17 +15,17 @@ function FAQ({ setPage }) {
     };
 
     // we obtain the FAQ questions when this function is called
-    useEffect(()=>{
+    useEffect(() => {
         const fetchData = async () => {
             const someResponse = await fetch("./faq.json");
             const data = await someResponse.json();
-            
+
             // we set questions variable based on the json so that they can be displayed
             setQuestions(data);
             console.log(data);
         };
         fetchData();
-    },[]);
+    }, []);
 
     // here we map the FAQ data to their own cells for display
     const listQuestions = questions.map((question, index) => (
@@ -37,7 +37,7 @@ function FAQ({ setPage }) {
                     data-bs-toggle="collapse"
                     data-bs-target={`#collapse${index}`}
                     aria-expanded="false"  // Expand the first item by default
-      
+
                 >
                     <strong>{question.question}</strong>
                 </button>
@@ -54,10 +54,10 @@ function FAQ({ setPage }) {
             </div>
         </div>
     ));
-    
+
 
     return (
-        <div style={{paddingBottom: "90px", position: "relative", backgroundImage: `url(${lunarsurface})`, backgroundSize: "cover", backgroundPosition: "center", display: "flex", height: "100vh"}}>
+        <div style={{ paddingBottom: "90px", position: "relative", backgroundImage: `url(${lunarsurface})`, backgroundSize: "cover", backgroundPosition: "center", display: "flex", height: "100vh" }}>
             <div style={{ flex: "1" }}>
             </div>
             <div style={{ flex: "2.25", padding: "0 0px", backgroundColor: "rgb(255, 255, 255)" }}>

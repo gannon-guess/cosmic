@@ -53,7 +53,7 @@ function Main( { viewer, setViewer } ) {
                         <div className="col-md-10 mx-auto">
                             <h2 style={{ fontSize: '1.5em' }}>About CoSMiC</h2>
                             <p style={{ fontSize: '1.2em' }}>
-                                The Collegiate Space Mining Competition, or CoSMiC, is an oportunity for schools in the US to compete head-to-head in a national lunar robot competition. This competition will be hosted at Iowa State University from May 21 to 24, 2025. </p> 
+                                The Collegiate Space Mining Competition, or CoSMiC, is an oportunity for schools in the US to compete head-to-head in a national lunar robot competition. This competition will be hosted on Iowa State University's campus from May 21 to 24, 2025. </p> 
                             
                             <p style={{ fontSize: '1.2em' }}>
                                 The competition will consist of 10+ teams each granted two 30 minute runs to mine and transport lunar regolith in a simulated lunar environment. 
@@ -62,7 +62,7 @@ function Main( { viewer, setViewer } ) {
                             <div>
                                 <h3 style={{ fontSize: '1.5em' }}>How to Attend</h3>
                                 <p style={{ fontSize: '1.2em' }}>
-                                    The competition dates are May 22nd to May 24th on Iowa State University's Campus. We would like to invite you to attend as a spectator on site or via livestream.
+                                    The competition dates are May 22nd to May 24th on Iowa State University's Campus. We would like to invite you to attend as a spectator on site or via livestream. To view the livestream navigate to the Livestream tab at the top of the site.
                                 </p>                        
                             
                             </div>

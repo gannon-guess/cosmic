@@ -52,12 +52,15 @@ function Rulebook() {
                 justifyContent: "space-between", // Ensures footer stays at bottom
                 alignItems: "center",
                 minHeight: "100vh", // Ensures the whole viewport height is covered
-                padding: "20px"
+                padding: "0px"
             }}
         >
-            <header className="cosmic-background text-white text-center py-4">
-                <h1>Rulebook</h1>
-            </header>
+        <div style={{ flex: "2.25", padding: "0 0px", backgroundColor: "rgb(255, 255, 255)" }}>
+        {/* Header Section */}
+        <header className="cosmic-background text-white text-center py-4" style={{ margin: "0 auto" }}>
+            <h1>Frequently Asked Questions</h1>
+        </header>
+        </div>
 
             <div
                 style={{
