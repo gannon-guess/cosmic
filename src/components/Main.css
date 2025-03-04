@@ -2,6 +2,14 @@
     padding: 20px;
 }
 
+.background-image {
+    background-image: url('../images/lunar_surface.jpg'); /* Ensure the correct path */
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+
 .content-section {
     display: flex;
     align-items: center; /* Aligns content vertically */

@@ -25,7 +25,7 @@ function Rulebook() {
             setTimeout(() => window.scrollTo(0, scrollY), 0); // Restore scroll position after state update
         }
     };
-    
+
     const goToPreviousPage = (event) => {
         event.preventDefault();
         if (pageNumber > 1) {
@@ -34,12 +34,6 @@ function Rulebook() {
             setTimeout(() => window.scrollTo(0, scrollY), 0);
         }
     };
-    
-
-
-    // const onMain = () => {
-    //     setPage("MAIN");
-    // };
 
     return (
         <div
@@ -51,17 +45,13 @@ function Rulebook() {
                 flexDirection: "column",
                 justifyContent: "space-between", // Ensures footer stays at bottom
                 alignItems: "center",
-                minHeight: "100vh", // Ensures the whole viewport height is covered
+                minHeight: "120vh", // Ensures the whole viewport height is covered
                 padding: "0px"
             }}
         >
-        <div style={{ flex: "2.25", padding: "0 0px", backgroundColor: "rgb(255, 255, 255)" }}>
-        {/* Header Section */}
-        <header className="cosmic-background text-white text-center py-4" style={{ margin: "0 auto" }}>
-            <h1>Frequently Asked Questions</h1>
-        </header>
-        </div>
-
+            <header className="cosmic-background text-white text-center py-4" style={{ backgroundColor: "red", width: "50%", margin: "0 auto", position: "relative" }}>
+                <h1>Rulebook</h1>
+            </header>
             <div
                 style={{
                     display: "flex",
@@ -69,11 +59,10 @@ function Rulebook() {
                     justifyContent: "center",
                     alignItems: "center",
                     backgroundColor: "rgba(255, 255, 255, 0.8)",
-                    paddingTop: "200px",
-                    borderRadius: "10px",
-                    height: "100vh",
+                    paddingTop: "0px",
+                    height: "120vh",
                     width: "90vw",
-                    maxWidth: "900px",
+                    maxWidth: "50%",
                     overflow: "hidden"
                 }}
             >
@@ -83,10 +72,10 @@ function Rulebook() {
                 >
                     <Page
                         pageNumber={pageNumber}
-                        height={window.innerHeight * 0.8} // Slightly reduce height for buttons
+                        height={window.innerHeight * 0.9} // Slightly reduce height for buttons
                     />
                 </Document>
-                <p style={{ color: "black", marginTop: "10px" }}>
+                <p style={{ color: "black", marginTop: "0px" }}>
                     Page {pageNumber} of {numPages}
                 </p>
 
@@ -98,14 +87,9 @@ function Rulebook() {
                         Next
                     </Button>
                 </div>
-                <div style={{ marginBottom: "20px" }}>
+                <div style={{ marginBottom: "60px" }}>
                     <p>
                         Or <a href="/files/CoSMiCguidebook-2025-Rev1.pdf" target="_blank" rel="noopener noreferrer">View Raw PDF Here</a>
-                    </p>
-                </div>
-                <div style={{ marginBottom: "200px" }}>
-                    <p>
-                        <a href="/files/rules.pdf" target="_blank" rel="noopener noreferrer">View Raw PDF Here</a>
                     </p>
                 </div>
             </div>

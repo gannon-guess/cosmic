@@ -18,8 +18,6 @@ const NavBar = () => {
                     <img src={CosmicLogo} alt="Cosmic Logo" style={{ width: "75px" }} />
                 </div>
 
-                <Navbar.Toggle aria-controls="navbar-nav" />
-
                 <Navbar.Collapse id="navbar-nav" className="w-100 d-flex justify-content-center">
                     {/* Center: Navigation Links */}
                     <Nav className="d-flex align-items-center">
