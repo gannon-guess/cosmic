@@ -6,7 +6,7 @@ import "./components/Main.css";
 import "./components/Fonts.css";
 
 import howe from './images/howe.jpeg';
-import lunarsurface from './images/lunar_surface.jpg';
+import earth_from_moon from './images/earth_from_moon.jpg';
 import howe_basement from './images/howe_basement.png';
 import schedule from './images/schedule.png';
 import sictr from './images/sictr.jpeg';
@@ -32,7 +32,7 @@ function Main({ viewer, setViewer }) {
     ];
 
     return (
-        <div style={{ paddingBottom: "90px", position: "relative", backgroundImage: `url(${lunarsurface})`, backgroundSize: "cover", backgroundPosition: "center", display: "flex", minHeight: "100vh" }}>
+        <div style={{ paddingBottom: "90px", position: "relative", backgroundImage: `url(${earth_from_moon})`, backgroundSize: "100%", backgroundPosition: "top center",backgroundColor: "rgb(0, 0, 0)", backgroundRepeat: "no-repeat", display: "flex", minHeight: "100vh" }}>
             <div style={{ flex: "1" }}></div>
             <div style={{ flex: "2.25", padding: "0 0px", backgroundColor: "rgb(255, 255, 255)", minHeight: "100%" }}>
                 <header className="cosmic-background text-white text-center py-4" style={{ fontFamily: 'SpaceAge', margin: "0 auto" }}>
