@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { HashRouter, Routes, Route } from "react-router-dom";
+import { Routes, Route, BrowserRouter } from "react-router-dom";
 import NavBar from "./NavBar.js";
 import Main from "./Main.js";
 import FAQ from "./FAQ.js";
@@ -32,7 +32,7 @@ function App() {
 
     return (
         <div className="app-container">
-            <HashRouter basename="/">
+            <BrowserRouter basename="/">
                 <NavBar />
                 <div className="content-wrapper">
                     <main className="main-content">
@@ -49,7 +49,7 @@ function App() {
                     </main>
                 </div>
                 <Footer />
-            </HashRouter>
+            </BrowserRouter>
         </div>
     );
 }
