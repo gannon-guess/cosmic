@@ -3,6 +3,7 @@ import { Document, Page, pdfjs } from "react-pdf";
 import "react-pdf/dist/esm/Page/AnnotationLayer.css";
 import "react-pdf/dist/esm/Page/TextLayer.css";
 import lunarsurface from './images/lunar_surface.jpg';
+import schedule from './images/schedule.png';
 import { Button } from 'react-bootstrap';
 import Footer from './Footer';
 
@@ -45,7 +46,7 @@ function Rulebook() {
                 flexDirection: "column",
                 justifyContent: "space-between", // Ensures footer stays at bottom
                 alignItems: "center",
-                minHeight: "120vh", // Ensures the whole viewport height is covered
+                minHeight: "180vh", // Ensures the whole viewport height is covered
                 padding: "0px"
             }}
         >
@@ -60,7 +61,7 @@ function Rulebook() {
                     alignItems: "center",
                     backgroundColor: "rgba(255, 255, 255, 0.8)",
                     paddingTop: "0px",
-                    height: "120vh",
+                    height: "180vh",
                     width: "90vw",
                     maxWidth: "50%",
                     overflow: "hidden"
@@ -87,10 +88,13 @@ function Rulebook() {
                         Next
                     </Button>
                 </div>
-                <div style={{ marginBottom: "60px" }}>
+                <div style={{ marginBottom: "20px" }}>
                     <p>
                         Or <a href="/files/CoSMiCguidebook-2025-Rev1.pdf" target="_blank" rel="noopener noreferrer">View Raw PDF Here</a>
                     </p>
+                </div>
+                <div style={{ marginBottom: "60px" }}>
+                    <img src={schedule} alt="Schedule" style={{ width: '100%', maxWidth: '600px'}} />
                 </div>
             </div>
 

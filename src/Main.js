@@ -8,7 +8,6 @@ import "./components/Fonts.css";
 import howe from './images/howe.jpeg';
 import earth_from_moon from './images/earth_from_moon.jpg';
 import howe_basement from './images/howe_basement.png';
-import schedule from './images/schedule.png';
 import sictr from './images/sictr.jpeg';
 import sictr_floorplan from './images/sictr_floorplan.png';
 
@@ -22,6 +21,10 @@ function Main({ viewer, setViewer }) {
         script.type = 'module';
         script.src = 'https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js';
         document.head.appendChild(script);
+
+        // Preload the background image
+        const preloadImage = new Image();
+        preloadImage.src = earth_from_moon;
     }, []);
 
     const campus_content = [
@@ -65,10 +68,6 @@ function Main({ viewer, setViewer }) {
                             <div style={{ marginTop: '30px' }}>
                                 <h3 style={{ fontSize: '1.4em' }}>Connect With Us</h3>
                                 <p style={{ fontSize: '1.2em' }}>If you have any questions, feel free to join our official Discord channel.</p>
-                            </div>
-                            <h3 style={{ fontSize: '1.4em' }}>Schedule</h3>
-                            <div className="content-image">
-                                <img src={schedule} alt={`Schedule`} />
                             </div>
                             <div style={{ marginTop: '30px', padding: '20px', border: '1px solid #ddd', borderRadius: '5px', backgroundColor: '#f9f9f9' }}>
                                 <h3 style={{ fontSize: '1.4em' }}>Rule Book</h3>
