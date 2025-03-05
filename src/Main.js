@@ -4,7 +4,6 @@ import 'bootstrap-icons/font/bootstrap-icons.css';
 import "./components/Global.css";
 import "./components/Main.css";
 import "./components/Fonts.css";
-
 import howe from './images/howe.jpeg';
 import earth_from_moon from './images/earth_from_moon.jpg';
 import howe_basement from './images/howe_basement.png';
@@ -96,6 +95,7 @@ function Main({ viewer, setViewer }) {
                 </main>
             </div>
             <div style={{ flex: "1" }}></div>
+
         </div>
     );
 }

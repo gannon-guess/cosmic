@@ -75,7 +75,7 @@ function FAQ({ setPage }) {
                             </div>
                             {/* Button to return to main page */}
                             <div className="text-center mt-4" style={{ marginBottom: "20px" }}>
-                                <Button onClick={onMain} variant="secondary">
+                                <Button onClick={onMain} variant="danger">
                                     Back to Main Page
                                 </Button>
                             </div>

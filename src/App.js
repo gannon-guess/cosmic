@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import NavBar from "./NavBar.js";
 import Main from "./Main.js";
 import FAQ from "./FAQ.js";
@@ -18,33 +18,23 @@ function App() {
         <div className="app-container">
             <BrowserRouter>
                 <NavBar />
-                <MainContent />
+                <div className="content-wrapper">
+                    <main className="main-content">
+                        <Routes>
+                            <Route index element={<Main />} />
+                            <Route path="signup" element={<Signup />} />
+                            <Route path="faq" element={<FAQ />} />
+                            <Route path="tourism" element={<Tourism />} />
+                            <Route path="livestream" element={<Livestream />} />
+                            <Route path="teamstatus" element={<TeamStatus />} />
+                            <Route path="rulebook" element={<Rulebook />} />
+                            <Route path="sponsor" element={<Sponsorship />} />
+                        </Routes>
+                    </main>
+                </div>
+                <Footer />
             </BrowserRouter>
         </div>
     );
 }
-
-function MainContent() {
-    const location = useLocation();
-    const showFooter = location.pathname !== "/";
-
-    return (
-        <>
-            <main className="main-content">
-                <Routes>
-                    <Route index element={<Main />} />
-                    <Route path="signup" element={<Signup />} />
-                    <Route path="faq" element={<FAQ />} />
-                    <Route path="tourism" element={<Tourism />} />
-                    <Route path="livestream" element={<Livestream />} />
-                    <Route path="teamstatus" element={<TeamStatus />} />
-                    <Route path="rulebook" element={<Rulebook />} />
-                    <Route path="sponsor" element={<Sponsorship />} />
-                </Routes>
-            </main>
-            {showFooter && <Footer />}
-        </>
-    );
-}
-
 export default App;

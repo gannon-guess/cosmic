@@ -81,10 +81,10 @@ function Rulebook() {
                 </p>
 
                 <div style={{ marginBottom: "20px" }}>
-                    <Button type="button" onClick={goToPreviousPage} disabled={pageNumber <= 1} variant="secondary" className="me-2">
+                    <Button type="button" onClick={goToPreviousPage} disabled={pageNumber <= 1} variant="danger" className="me-2">
                         Previous
                     </Button>
-                    <Button type="button" onClick={goToNextPage} disabled={pageNumber >= numPages} variant="secondary">
+                    <Button type="button" onClick={goToNextPage} disabled={pageNumber >= numPages} variant="danger">
                         Next
                     </Button>
                 </div>
