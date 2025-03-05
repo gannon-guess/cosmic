@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { HashRouter, Routes, Route } from "react-router-dom";
 import NavBar from "./NavBar.js";
 import Main from "./Main.js";
@@ -14,6 +14,13 @@ import "./components/Global.css";
 import Sponsorship from "./Sponsorship.js";
 
 function App() {
+    useEffect(() => {
+        if (window.location.search) {
+            const path = window.location.search.replace('?', '');
+            window.history.replaceState(null, '', path);
+        }
+    }, []);
+
     return (
         <div className="app-container">
             <HashRouter>
