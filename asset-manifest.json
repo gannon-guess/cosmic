@@ -1,8 +1,9 @@
 {
   "files": {
     "main.css": "/static/css/main.4a11a2df.css",
-    "main.js": "/static/js/main.f0cc263b.js",
+    "main.js": "/static/js/main.4dbbd25c.js",
     "static/media/sictr.jpeg": "/static/media/sictr.7ebcb6d0eb9bc35ea340.jpeg",
+    "static/media/earth_from_moon.jpg": "/static/media/earth_from_moon.a38b2c9fc0dbd52aa636.jpg",
     "static/media/lunar_surface.jpg": "/static/media/lunar_surface.a5be5c19d783d3390081.jpg",
     "static/media/howe_basement.png": "/static/media/howe_basement.983d3de5a57882d75d61.png",
     "static/media/sictr_floorplan.png": "/static/media/sictr_floorplan.dc21aae39301ef55d65e.png",
@@ -14,10 +15,10 @@
     "static/media/space_age.ttf": "/static/media/space_age.ee4242670515bf1b8739.ttf",
     "index.html": "/index.html",
     "main.4a11a2df.css.map": "/static/css/main.4a11a2df.css.map",
-    "main.f0cc263b.js.map": "/static/js/main.f0cc263b.js.map"
+    "main.4dbbd25c.js.map": "/static/js/main.4dbbd25c.js.map"
   },
   "entrypoints": [
     "static/css/main.4a11a2df.css",
-    "static/js/main.f0cc263b.js"
+    "static/js/main.4dbbd25c.js"
   ]
 }
