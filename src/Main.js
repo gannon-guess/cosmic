@@ -70,7 +70,7 @@ function Main({ viewer, setViewer }) {
                             </div>
                             <div style={{ marginTop: '30px', padding: '20px', border: '1px solid #ddd', borderRadius: '5px', backgroundColor: '#f9f9f9' }}>
                                 <h3 style={{ fontSize: '1.4em' }}>Rule Book</h3>
-                                <a href="/files/CoSMiCguidebook-2025-Rev1.pdf" target="_blank" rel="noopener noreferrer" className="btn btn-success">
+                                <a href="/files/CoSMiCguidebook-2025.pdf" target="_blank" rel="noopener noreferrer" className="btn btn-success">
                                     Open CoSMiC Rulebook
                                 </a>
                             </div>

@@ -50,7 +50,7 @@ function FAQ({ setPage }) {
             >
                 <div className="accordion-body">
                     {question.answer}
-                    {question.image && <img src={question.image} alt={question.image} style={{ width: '100%', marginTop: '10px' }} />}
+{question.image && <img src={question.image} alt={question.image} style={{ width: '100%', marginTop: '10px' }} />}
                 </div>
             </div>
         </div>

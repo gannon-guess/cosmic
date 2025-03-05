@@ -68,7 +68,7 @@ function Rulebook() {
                 }}
             >
                 <Document
-                    file="/files/CoSMiCguidebook-2025-Rev1.pdf"
+                    file="/files/CoSMiCguidebook-2025.pdf"
                     onLoadSuccess={onDocumentLoadSuccess}
                 >
                     <Page
