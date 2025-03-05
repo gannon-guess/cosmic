@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.50ac8fee.css",
-    "main.js": "/static/js/main.b353da41.js",
+    "main.js": "/static/js/main.c59f7348.js",
     "static/media/sictr.jpeg": "/static/media/sictr.7ebcb6d0eb9bc35ea340.jpeg",
     "static/media/earth_from_moon.jpg": "/static/media/earth_from_moon.a38b2c9fc0dbd52aa636.jpg",
     "static/media/lunar_surface.jpg": "/static/media/lunar_surface.a5be5c19d783d3390081.jpg",
@@ -15,10 +15,10 @@
     "static/media/space_age.ttf": "/static/media/space_age.ee4242670515bf1b8739.ttf",
     "index.html": "/index.html",
     "main.50ac8fee.css.map": "/static/css/main.50ac8fee.css.map",
-    "main.b353da41.js.map": "/static/js/main.b353da41.js.map"
+    "main.c59f7348.js.map": "/static/js/main.c59f7348.js.map"
   },
   "entrypoints": [
     "static/css/main.50ac8fee.css",
-    "static/js/main.b353da41.js"
+    "static/js/main.c59f7348.js"
   ]
 }
