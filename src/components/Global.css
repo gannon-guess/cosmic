@@ -29,7 +29,7 @@ html, body {
 }
 
 footer {
-    position: absolute;
+    position: relative; /* Change to relative */
     left: 0;
     bottom: 0;
     right: 0;
