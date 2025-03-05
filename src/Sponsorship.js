@@ -42,7 +42,7 @@ function Sponsorship() {
                                     </tr>
                                     <tr>
                                         <td>Galactic Sponsor</td>
-                                        <td>Company Name on Regolith/Robot Pit, 4 Banquet Tickets, Networking Table, Recognition on Banner & Programs, Logo on Livestream</td>
+                                        <td>Company Name on Regolith/Robot Pit, 3 Banquet Tickets, Networking Table, Recognition on Banner & Programs, Logo on Livestream</td>
                                         <td>$10,000</td>
                                     </tr>
                                     <tr>
