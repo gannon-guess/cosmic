@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 import NavBar from "./NavBar.js";
 import Main from "./Main.js";
 import FAQ from "./FAQ.js";
@@ -16,7 +16,7 @@ import Sponsorship from "./Sponsorship.js";
 function App() {
     return (
         <div className="app-container">
-            <BrowserRouter>
+            <HashRouter>
                 <NavBar />
                 <div className="content-wrapper">
                     <main className="main-content">
@@ -33,8 +33,9 @@ function App() {
                     </main>
                 </div>
                 <Footer />
-            </BrowserRouter>
+            </HashRouter>
         </div>
     );
 }
+
 export default App;
